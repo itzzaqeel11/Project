@@ -1,0 +1,26 @@
+{
+  "name": "shopify-product-page-enhancer",
+  "version": "1.0.0",
+  "description": "A Shopify app to add more functionality to the product page",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "react-scripts build",
+    "client": "cd client && npm start"
+  },
+  "dependencies": {
+    "@shopify/shopify-api": "^4.0.0", // Manages Shopify API calls
+    "@shopify/polaris": "^10.0.0",     // Shopify's React UI component library
+    "@shopify/react-app-bridge": "^3.0.0", // App bridge to manage app environment
+    "dotenv": "^10.0.0", // Loads environment variables from .env file
+    "express": "^4.17.1", // For handling HTTP requests
+    "mongoose": "^5.13.8", // For MongoDB (or another database)
+    "cors": "^2.8.5", // Cross-Origin Resource Sharing
+    "body-parser": "^1.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "license": "MIT"
+}
